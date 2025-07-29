@@ -1,11 +1,7 @@
 "use client"
-import React, { SVGProps } from "react";
+import React from "react";
 import { useState } from "react";
-import XIcon from "./svg/XIcon";
-
-import ElectricalIcon from "@assets/svg/electrical.svg";
-import MIcon from "@assets/svg/menu.svg";
-import { PlugZap } from "lucide-react";
+import { MenuIcon, PlugZap, X } from "lucide-react";
 
 const Header = () => {
     const [isToolbar, setIsToolbar] = useState(false);
@@ -39,8 +35,8 @@ const Header = () => {
                 {/* Mobile Menu */}
                 <button className="md:hidden text-gray-200 hover:text-purple-300 transition-colors" onClick={toggleToolbar}>
                     { isToolbar
-                    ? <XIcon className="h-6 w-6 text-gray-200" />
-                    : <MIcon className="h-6 w-6" />
+                    ? <X className="h-6 w-6 text-gray-200" />
+                    : <MenuIcon className="h-6 w-6" />
                     }
                 </button>
             </div>
