@@ -1,6 +1,6 @@
 "use client"
 
-import { Check, ChevronLeft, ChevronRight, Factory } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight, Factory, Loader2 } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/Carousel";
 
 import { useEffect, useState } from "react";
@@ -72,6 +72,9 @@ const PortfolioSection = () => {
                         onClick={closeZoom}
                     >
                         <div className="absolute inset-0 flex items-center justify-center mb-12 mt-12">
+                            <div>
+                                <Loader2 className="w-12 h-12 animate-spin text-white" />
+                            </div>
                             <Image 
                                 fill
                                 className="object-contain w-full h-full"
