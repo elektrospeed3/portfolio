@@ -17,7 +17,7 @@ const Header = () => {
                     </div>
                     <div>
                         <h1 className="text-xl font-bold bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent">
-                            Elektro Speed
+                            Elektro Speed 3
                         </h1>
                         <p className="text-xs text-purple-300 italic">Z nami prąd płynie szybciej!</p>
                     </div>

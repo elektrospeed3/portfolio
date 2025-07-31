@@ -40,7 +40,7 @@ const ContactSection = () => {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-lg font-semibold text-white mb-2">E-Mail</h3>
-                                    <p className="text-slate-300 font-medium">biuro@elektrospeed.pl</p>
+                                    <p className="text-slate-300 font-medium">biuro@elektrospeed3.pl</p>
                                     <p className="text-slate-400 text-sm mt-1">Odpowiadamy w ciągu 2h</p>
                                 </div>
                             </div>
