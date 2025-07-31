@@ -16,7 +16,7 @@ function ProjectCarousel({ projects, category, action }: ProjectCarouselProps) {
                 {projects.map((project, index) => (<>
                 {project.category === category ? (<>
                     {project.images.map((image, i) => (
-                    <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3" key={parseInt(`${index+1}${i}`)}>
+                    <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3" key={i}>
                             <Card className="bg-slate-700/50 border-yellow-400/30 hover:border-yellow-400/60 transition-all duration-300 hover:transform hover:scale-105 overflow-hidden h-150">
                                 <div className="relative h-full overflow-hidden group">
                                     <Image 
