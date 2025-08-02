@@ -13,7 +13,7 @@ const HeroSection = () => {
 
             <div className="container mx-auto px-4 text-center relative z-10 pt-20">
                 <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-300 to-cyan-400 bg-clip-text text-transparent">
-                    Elektro Speed
+                    Elektro Speed 3
                 </h1>
                 <p className="text-2xl md:text-3xl text-purple-300 font-medium mb-12">
                     Kompleksowe instalacje elektryczne i przemysłowe
