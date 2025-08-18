@@ -7,7 +7,7 @@ const ServicesSection = () => {
         title: "Instalacje elektryczne",
         description: "Montaż instalacji elektrycznych w budynkach użytku publicznego.",
         features: [
-            "Przyłącza zasilającze", 
+            "Przyłącza zasilające", 
             "Podłączanie rozdzielni elektrycznych", 
             "Pomiary elektryczne",
             "Budowa tras kablowych",
