@@ -3,8 +3,14 @@
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/Card";
 import { Mail, Phone } from "lucide-react";
+import { TextSkeleton } from "./ui/Skeleton";
 
 const ContactSection = () => {
+    const contactInfo = {
+        phone: "+48 662 292 424",
+        email: "marcinsliwka83@gmail.com",
+    }
+
     return (
         <section id="contact" className="py-20 bg-slate-900">
             <div className="container mx-auto px-4">
@@ -25,7 +31,11 @@ const ContactSection = () => {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-lg font-semibold text-white mb-2">Telefon</h3>
-                                    <p className="text-slate-300 font-medium">+48 662 292 424</p>
+                                    { contactInfo.phone.length > 0 ? (
+                                        <p className="text-slate-300 font-medium">{contactInfo.phone}</p>
+                                    ) : (
+                                        <TextSkeleton />
+                                    )}
                                     <p className="text-slate-400 text-sm mt-1">Dostępny w godz. 8:00-20:00</p>
                                 </div>
                             </div>
@@ -40,7 +50,11 @@ const ContactSection = () => {
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-lg font-semibold text-white mb-2">E-Mail</h3>
-                                    <p className="text-slate-300 font-medium">biuro@elektrospeed.pl</p>
+                                    { contactInfo.email.length > 0 ? (
+                                        <p className="text-slate-300 font-medium">{contactInfo.email}</p>
+                                    ) : (
+                                        <TextSkeleton />
+                                    )}
                                     <p className="text-slate-400 text-sm mt-1">Odpowiadamy w ciągu 2h</p>
                                 </div>
                             </div>
