@@ -18,6 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Elektro Speed 3",
   description: "Profesjonalne usługi elektryczne. Szybko, bezpiecznie i z pasją!",
+  metadataBase: new URL("https://elektrospeed3.pl"),
+  alternates: {
+    canonical: "https://elektrospeed3.pl",
+  }
 };
 
 export default function RootLayout({
