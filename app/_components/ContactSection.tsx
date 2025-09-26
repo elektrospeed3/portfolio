@@ -32,7 +32,7 @@ const ContactSection = () => {
                                 <div className="flex-1">
                                     <h3 className="text-lg font-semibold text-white mb-2">Telefon</h3>
                                     { contactInfo.phone.length > 0 ? (
-                                        <p className="text-slate-300 font-medium">{contactInfo.phone}</p>
+                                        <a className="text-slate-300 font-medium" href={`tel:${contactInfo.phone}`}>{contactInfo.phone}</a>
                                     ) : (
                                         <TextSkeleton />
                                     )}
@@ -51,7 +51,7 @@ const ContactSection = () => {
                                 <div className="flex-1">
                                     <h3 className="text-lg font-semibold text-white mb-2">E-Mail</h3>
                                     { contactInfo.email.length > 0 ? (
-                                        <p className="text-slate-300 font-medium">{contactInfo.email}</p>
+                                        <a className="text-slate-300 font-medium" href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
                                     ) : (
                                         <TextSkeleton />
                                     )}
