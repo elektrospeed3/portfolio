@@ -32,8 +32,8 @@ function ProjectCarousel({ projects, category, action }: ProjectCarouselProps) {
                 </>) : (<></>)}
                 </>))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-12 bg-slate-700/80 border-yellow-400/30 text-yellow-400 hover:bg-slate-600/80 hover:border-yellow-400/60 cursor-pointer" />
-            <CarouselNext className="hidden md:flex -right-12 bg-slate-700/80 border-yellow-400/30 text-yellow-400 hover:bg-slate-600/80 hover:border-yellow-400/60 cursor-pointer" />
+            <CarouselPrevious className="-left-3.5 md:flex md:-left-12 bg-slate-700/80 border-yellow-400/30 text-yellow-400 hover:bg-slate-600/80 hover:border-yellow-400/60 cursor-pointer" />
+            <CarouselNext className="-right-3.5 md:flex md:-right-12 bg-slate-700/80 border-yellow-400/30 text-yellow-400 hover:bg-slate-600/80 hover:border-yellow-400/60 cursor-pointer" />
         </Carousel>
     );
 }

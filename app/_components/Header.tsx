@@ -13,9 +13,15 @@ const Header = () => {
                 <div className="flex items-center space-x-3">
                     <div className="bg-gradient-to-r from-purple-500/10 to-cyan-500/10 p-2 rounded-xl">
                         <PlugZap className="h-6 w-6 text-amber-300 animate-pulse delay-10" />
-                        {/* <span className="h-6 w-6 text-white animate-pulse">🗲</span> */}
                     </div>
                     <div>
+                        {/* <Image 
+                            src="/logo.png"
+                            alt="Elektro Speed 3 Logo"
+                            width={120}
+                            height={60}
+                            className="animate-spin"
+                        /> */}
                         <h1 className="text-xl font-bold bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent">
                             Elektro Speed 3
                         </h1>
@@ -25,7 +31,7 @@ const Header = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-8">
-                    <a href="#" className="text-gray-200 hover:text-purple-300 transition-colors font-medium">Strona główna</a>
+                    <a href="/" className="text-gray-200 hover:text-purple-300 transition-colors font-medium">Strona główna</a>
                     <a href="#about" className="text-gray-200 hover:text-purple-300 transition-colors font-medium">O nas</a>
                     <a href="#services" className="text-gray-200 hover:text-purple-300 transition-colors font-medium">Usługi</a>
                     <a href="#portfolio" className="text-gray-200 hover:text-purple-300 transition-colors font-medium">Portfolio</a>
@@ -44,11 +50,11 @@ const Header = () => {
             { isToolbar && (
                 <div className="md:hidden bg-slate-900/95 backdrop-blur-md border-t border-white/10">
                     <div className="px-4 py-4 space-y-4">
-                        <a href="" className="block text-gray-200 hover:text-purple-300 transition-colors font-medium" onClick={() => setIsToolbar(false)}>Strona główna</a>
-                        <a href="" className="block text-gray-200 hover:text-purple-300 transition-colors font-medium" onClick={() => setIsToolbar(false)}>O nas</a>
-                        <a href="" className="block text-gray-200 hover:text-purple-300 transition-colors font-medium" onClick={() => setIsToolbar(false)}>Usługi</a>
-                        <a href="" className="block text-gray-200 hover:text-purple-300 transition-colors font-medium" onClick={() => setIsToolbar(false)}>Portfolio</a>
-                        <a href="" className="block text-gray-200 hover:text-purple-300 transition-colors font-medium" onClick={() => setIsToolbar(false)}>Kontakt</a>
+                        <a href="/" className="block text-gray-200 hover:text-purple-300 transition-colors font-medium" onClick={() => setIsToolbar(false)}>Strona główna</a>
+                        <a href="#about" className="block text-gray-200 hover:text-purple-300 transition-colors font-medium" onClick={() => setIsToolbar(false)}>O nas</a>
+                        <a href="#services" className="block text-gray-200 hover:text-purple-300 transition-colors font-medium" onClick={() => setIsToolbar(false)}>Usługi</a>
+                        <a href="#portfolio" className="block text-gray-200 hover:text-purple-300 transition-colors font-medium" onClick={() => setIsToolbar(false)}>Portfolio</a>
+                        <a href="#contact" className="block text-gray-200 hover:text-purple-300 transition-colors font-medium" onClick={() => setIsToolbar(false)}>Kontakt</a>
                     </div>
                 </div>
             )}

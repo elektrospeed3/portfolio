@@ -36,7 +36,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className="animate-bounce">
-                    <ArrowDown className="h-8 w-8 text-purple-300 mx-auto" />
+                    <ArrowDown className="h-8 w-8 text-purple-300 mx-auto" onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: 'smooth' })} />
                 </div>
             </div>
         </section>
